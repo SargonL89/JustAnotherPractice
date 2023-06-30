@@ -1,0 +1,34 @@
+.div1 {
+    background-color: black;
+    width: auto;
+    height: 400px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div3 {
+    transition: 1s;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 1px 30px 1px rgba(255, 255, 255, 1.2),
+        inset 1px 1px 30px 10px rgba(255, 255, 255, 1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div4 {
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 1px 1px 30px 1px rgba(255, 255, 255, 1.2),
+        inset 1px 1px 30px 10px rgba(255, 255, 255, 1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
