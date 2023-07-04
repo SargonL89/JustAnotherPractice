@@ -79,10 +79,15 @@ function setTimeTres() {
     btn4.addEventListener('click', () => {
         addClass('div3'),
         divList.forEach((div) => {
-            for (let letra of "Hola Mundo!") {
+            for (let letra of "Hola") {
                 setTimeout(() => {
                     div.innerHTML += letra
                 }, 2000)
+            };
+            for (let letra of " Mundo!") {
+                setTimeout(() => {
+                    div.innerHTML += letra
+                }, 2500)
             }
         })
     })
@@ -91,3 +96,31 @@ function setTimeTres() {
 setTimeDos();
 setTimeTres()
 
+
+const eventoFuturo = (res) => {
+    return new Promise( (resolve, reject) => {
+        setTimeout(() => {
+            res ? resolve('Promesa resuelta') : reject('Promesa rechazada')
+        }, 2000)
+    }) 
+}
+
+function resolver() {
+    eventoFuturo(true)
+    .then((response) => {
+        console.log(response)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
+
+function rechazar() {
+    eventoFuturo(false)
+    .then((response) => {
+        console.log(response)
+    })
+    .catch((error) => {
+        console.log(error)
+    })
+}
