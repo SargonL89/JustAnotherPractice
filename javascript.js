@@ -124,3 +124,21 @@ function rechazar() {
         console.log(error)
     })
 }
+
+
+
+function jsonConverter() {
+    const div5 = document.querySelector('.div5');
+
+    baseDatosFicticia.forEach((placa) => {
+        div5.innerHTML += `{
+            <ul>"id": "${placa.id}", </ul>
+            <ul>"fabricante": "${placa.fabricante}", </ul>
+            <ul>"marca": "${placa.marca}", </ul>
+            <ul>"modelo": "${placa.modelo}", </ul>
+            <ul>"memoria": "${placa.memoria}", </ul>
+            <ul>"precio": ${placa.precio}</ul>}, `;
+    })
+}
+
+jsonConverter()
